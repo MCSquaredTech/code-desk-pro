@@ -1,0 +1,64 @@
+@import '~../../node_modules/bootstrap/dist/css/bootstrap.css';
+
+.wrapper {
+    display: flex;
+    width: 75%;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    
+}
+
+.main-wrapper { 
+    flex-flow: column wrap;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    }
+
+    .sidebar { 
+        flex-basis: 19%;
+
+        background: black;
+        color: black;
+    } 
+
+.main {
+    flex: 0 0 80%;
+
+    background: black;
+    color: white;
+}
+
+.footer1 { 
+
+    background: black;
+    color: white;
+    bottom: 0;
+} 
+
+.home { 
+    width: 100%;
+    height: 100%; 
+    margin: 5px; 
+    padding: 0px; 
+}
+
+.home > .projects { 
+
+    width: 25%; 
+    height: 75%; 
+    padding: 7px;
+    border: 1px solid #999;
+    border-radius: 20px;
+}
+
+.drwb {
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+
+
