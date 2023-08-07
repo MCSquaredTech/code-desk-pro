@@ -19,10 +19,6 @@ const LeftSidebar = () => {
 
     const handleClick = () => {
         const toggle = collapsed ? false : true;  
-        // const flexBasis = collapsed ? '19%' : '7%';
-        // const cssElement = document.getElementsByClassName('sidebar')
-        // console.log(cssElement, flexBasis);
-        // cssElement[0].style.flexBasis = flexBasis;
         setCollapsed(toggle);
     }
 
@@ -30,7 +26,10 @@ const LeftSidebar = () => {
         <div>
             <Sidebar
                 style={{height: "100vh", minHeight: "400px"}}
-                collapsed={collapsed}>
+                collapsed={collapsed}
+                toggleed={toggled}
+                onToggle={handleToggleSidebar}
+                breakPoint="md">
                 <Menu>
                     <MenuItem
                         icon={<MenuOutlinedIcon />}
